@@ -38,4 +38,18 @@ public class Equipo {
         return null;
 
 }
+
+    public String imprimirPlantel() {
+            StringBuilder resultado = new StringBuilder();
+            
+            for (Jugador jugador : jugadores) {
+                resultado.append("[").append(jugador.getNumeroCamiseta()).append("] ")
+                        .append(jugador.getNombre()).append(" (").append(jugador.getPosicion()).append("), ");
+            }
+            if (resultado.length() > 2) {
+                resultado.delete(resultado.length() - 2, resultado.length());
+            }
+            return resultado.toString();
+        }
 }
+

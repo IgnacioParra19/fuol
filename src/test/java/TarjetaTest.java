@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 
+//prueba de subida github
 import org.junit.Test;
 
 import com.parcial.Equipo;
